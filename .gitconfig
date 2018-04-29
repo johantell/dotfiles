@@ -1,0 +1,16 @@
+[user]
+	name = Johan Tell
+	email = johan@mintcore.se
+
+[push]
+	default = simple
+
+[pull]
+	rebase = true
+
+[alias]
+	p = push-origin-or-fork
+	co = checkout
+	amend = commit -v --amend
+	c = commit -v
+
