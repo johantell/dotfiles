@@ -18,3 +18,8 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 set noswapfile
 
+" added by teo
+" allow unsaved buffers to be backgrounded
+set hidden
+" toggle between the two most recently edited files
+nmap <leader><leader> :edit #<CR>
