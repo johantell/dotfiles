@@ -23,3 +23,6 @@ set noswapfile
 set hidden
 " toggle between the two most recently edited files
 nmap <leader><leader> :edit #<CR>
+
+let g:ctrlp_custom_ignore = '\v[\/](.git|.hg|.svn|_build|deps)$'
+
