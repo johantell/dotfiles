@@ -1,10 +1,10 @@
 # Git autocompletion
 # source: https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
-source ~/git-completion.bash
+source ~/user-configuration/bin/git-completion.bash
 
 # Git prompt
 # source: https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-source ~/.git-prompt.sh
+source ~/user-configuration/bin/.git-prompt.sh
 
 # Show a different color on master branch
 function git_branch_color() {
