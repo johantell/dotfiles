@@ -1,4 +1,6 @@
 alchemist.vim
 ctrlp.vim
 vim-elixir
+vim-ruby
+vim-slim
 ale
