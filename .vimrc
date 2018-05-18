@@ -16,6 +16,8 @@ set backspace=indent,eol,start
 
 set shiftwidth=2
 
+set ttimeout ttimeoutlen=50
+
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
@@ -27,5 +29,8 @@ set hidden
 " toggle between the two most recently edited files
 nmap <leader><leader> :edit #<CR>
 
-let g:ctrlp_custom_ignore = '\v[\/](.git|.hg|.svn|_build|deps)$'
+" ctrlp configuration
+let g:ctrlp_custom_ignore = '\v[\/](.git|.hg|.svn|_build|deps|node_modules|tmp)$'
 
+" ale configuration
+let g:ale_lint_delay = 1000
