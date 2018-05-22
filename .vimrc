@@ -11,6 +11,10 @@ set expandtab
 set tabstop=2
 set softtabstop=2
 
+" Activates bottom status bar
+set laststatus=2
+set statusline=\ %<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+
 " Make backspace work as in most other editors
 set backspace=indent,eol,start
 
