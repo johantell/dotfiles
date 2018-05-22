@@ -29,6 +29,16 @@ set hidden
 " toggle between the two most recently edited files
 nmap <leader><leader> :edit #<CR>
 
+" Remap arrow keys to prevent usage
+nnoremap <left> :echohl ErrorMsg<Bar>echo "use h!"<Bar>echohl None<CR>
+nnoremap <down> :echohl ErrorMsg<Bar>echo "use j!"<Bar>echohl None<CR>
+nnoremap <up> :echohl ErrorMsg<Bar>echo "use k!"<Bar>echohl None<CR>
+nnoremap <right> :echohl ErrorMsg<Bar>echo "use l!"<Bar>echohl None<CR>
+inoremap <left> <nop>
+inoremap <down> <nop>
+inoremap <up> <nop>
+inoremap <right> <nop>
+
 " ctrlp configuration
 let g:ctrlp_custom_ignore = '\v[\/](.git|.hg|.svn|_build|deps|node_modules|tmp)$'
 
