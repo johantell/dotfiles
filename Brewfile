@@ -8,3 +8,4 @@ cask install iterm2
 cask install opera
 cask install shortcuts
 cask install slack
+cask install sourcetree
