@@ -48,3 +48,10 @@ let g:ctrlp_custom_ignore = '\v[\/](.git|.hg|.svn|_build|deps|node_modules|tmp)$
 
 " ale configuration
 let g:ale_lint_delay = 1000
+let g:ale_linters_explicit = 1
+let g:ale_linters = {
+\ 'elixir': ['credo'],
+\ 'ruby': ['rubocop'],
+\ 'javascript': ['eslint'],
+\ 'scss': ['sass-lint']
+\}
