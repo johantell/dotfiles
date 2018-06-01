@@ -13,7 +13,7 @@ set softtabstop=2
 
 " Activates bottom status bar
 set laststatus=2
-set statusline=\ %<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 " Make backspace work as in most other editors
 set backspace=indent,eol,start
@@ -32,6 +32,7 @@ set noswapfile
 set hidden
 " toggle between the two most recently edited files
 nmap <leader><leader> :edit #<CR>
+set incsearch
 
 " Remap arrow keys to prevent usage
 nnoremap <left> :echohl ErrorMsg<Bar>echo "use h!"<Bar>echohl None<CR>
@@ -55,3 +56,10 @@ let g:ale_linters = {
 \ 'javascript': ['eslint'],
 \ 'scss': ['sass-lint']
 \}
+
+cnoremap %% <c-r>=expand('%:h').'/'<cr>
+map <leader>e :edit %%
+map <leader>s :split %%
+map <leader>v :vsplit %%
+map <leader>t :tabedit %%
+map <leader>r :read %%
