@@ -1,6 +1,7 @@
-alchemist.vim
-ctrlp.vim
-vim-elixir
-vim-ruby
-vim-slim
-ale
+tpope/vim-surround
+slashmili/alchemist.vim
+kien/ctrlp.vim
+elixir-editors/vim-elixir
+vim-ruby/vim-ruby
+slim-template/vim-slim
+w0rp/ale
