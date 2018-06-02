@@ -5,3 +5,6 @@ elixir-editors/vim-elixir
 vim-ruby/vim-ruby
 slim-template/vim-slim
 w0rp/ale
+chmck/vim-coffee-script
+ElmCast/elm-vim
+tpope/vim-commentary
