@@ -1,6 +1,6 @@
 #!/bin/sh
 
-bundles=`cat ../.vim_deps`
+bundles=`cat .vim_deps`
 
 display_new_commits() {
   work_tree_path="$1"
@@ -18,14 +18,14 @@ display_new_commits() {
 
 for bundle in ${bundles}; do
   bundle_name="$(echo "$bundle" | cut -d "/" -f 2)"
-  vim_bundle="$HOME/.vim/pack/bundle/start/$bundle_name"
+  vim_bundle="$HOME/.vim/pack/plugins/start/$bundle_name"
 
   if [ ! -d "$vim_bundle" ]; then
     git clone "git://github.com/$bundle" "$vim_bundle"
   fi
 done
 
-find "$HOME/.vim/pack/bundle" -type d -name ".git" | while read -r path; do
+find "$HOME/.vim/pack/plugins" -type d -name ".git" | while read -r path; do
   path="${path%/.git}"
 
   if [ "$(git -C "$path" remote)" ]; then
