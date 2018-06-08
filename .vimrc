@@ -22,14 +22,17 @@ set shiftwidth=2
 
 set ttimeout ttimeoutlen=50
 
-set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+highlight ColorColumn ctermbg=DarkGrey
+set colorcolumn=81
 
 " Show trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
 set noswapfile
+
+" Allow yanking to clipboard
+set clipboard=unnamed
 
 " added by teo
 " allow unsaved buffers to be backgrounded
