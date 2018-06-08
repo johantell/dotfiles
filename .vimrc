@@ -25,6 +25,10 @@ set ttimeout ttimeoutlen=50
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+" Show trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
 set noswapfile
 
 " added by teo
