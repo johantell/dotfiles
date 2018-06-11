@@ -1,5 +1,6 @@
 brew asdf
 brew git
+brew gnugpg
 brew reattach-to-user-namespace
 brew tmux
 brew vim
