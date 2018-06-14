@@ -3,7 +3,7 @@ syntax on
 colorscheme desert
 
 set number
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE
 
 filetype plugin indent on
 set expandtab
@@ -22,7 +22,7 @@ set shiftwidth=2
 
 set ttimeout ttimeoutlen=50
 
-highlight ColorColumn ctermbg=DarkGrey
+highlight ColorColumn ctermbg=LightGrey
 set colorcolumn=81
 
 " Show trailing whitespace
