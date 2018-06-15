@@ -1,9 +1,9 @@
 syntax on
 
-colorscheme desert
+silent! colorscheme solarized
 
+set background=light
 set number
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE
 
 filetype plugin indent on
 set expandtab
@@ -24,10 +24,6 @@ set ttimeout ttimeoutlen=50
 
 highlight ColorColumn ctermbg=LightGrey
 set colorcolumn=81
-
-" Show trailing whitespace
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
 
 set noswapfile
 
@@ -51,9 +47,6 @@ inoremap <down> <nop>
 inoremap <up> <nop>
 inoremap <right> <nop>
 
-" ctrlp configuration
-let g:ctrlp_custom_ignore = '\v[\/](.git|.hg|.svn|_build|deps|node_modules|tmp)$'
-
 " ale configuration
 let g:ale_lint_delay = 1000
 let g:ale_linters_explicit = 1
@@ -70,3 +63,27 @@ map <leader>s :split %%
 map <leader>v :vsplit %%
 map <leader>t :tabedit %%
 map <leader>r :read %%
+
+set grepprg=git\ grep\ -n
+
+augroup ft_qf
+  autocmd!
+
+  autocmd FileType qf setlocal nowrap nonumber
+augroup END
+
+set nowildmenu
+set wildmode=list:longest,list:full
+
+let g:pick_height = 15
+nmap <space><space> :call PickFile()<CR>
+nmap <space>s :call PickFileSplit()<CR>
+nmap <space>v :call PickFileVerticalSplit()<CR>
+nmap <space>t :call PickFileTab()<CR>
+nmap <space>b :call PickBuffer()<CR>
+
+set list
+set listchars=tab:\ \ ,trail:.,extends:>,precedes:<,nbsp:+
+
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
