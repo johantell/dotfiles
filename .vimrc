@@ -48,14 +48,15 @@ inoremap <up> <nop>
 inoremap <right> <nop>
 
 " ale configuration
-let g:ale_lint_delay = 1000
+let g:ale_lint_delay = 500
 let g:ale_linters_explicit = 1
-let g:ale_linters = {
-\ 'elixir': ['credo'],
-\ 'ruby': ['rubocop'],
-\ 'javascript': ['eslint'],
-\ 'scss': ['sass-lint']
-\}
+
+" ale linter configuration
+let g:ale_linters = {}
+let g:ale_linters.elixir = ['credo']
+let g:ale_linters.ruby = ['rubocop']
+let g:ale_linters.javascript = ['eslint']
+let g:ale_linters.scss = ['sass-lint']
 
 cnoremap %% <c-r>=expand('%:h').'/'<cr>
 map <leader>e :edit %%
