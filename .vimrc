@@ -42,6 +42,10 @@ nnoremap <left> :echohl ErrorMsg<Bar>echo "use h!"<Bar>echohl None<CR>
 nnoremap <down> :echohl ErrorMsg<Bar>echo "use j!"<Bar>echohl None<CR>
 nnoremap <up> :echohl ErrorMsg<Bar>echo "use k!"<Bar>echohl None<CR>
 nnoremap <right> :echohl ErrorMsg<Bar>echo "use l!"<Bar>echohl None<CR>
+vnoremap <left> :<C-U>echohl ErrorMsg<Bar>echo "use h!"<Bar>echohl None<CR>gv
+vnoremap <down> :<C-U>echohl ErrorMsg<Bar>echo "use j!"<Bar>echohl None<CR>gv
+vnoremap <up> :<C-U>echohl ErrorMsg<Bar>echo "use k!"<Bar>echohl None<CR>gv
+vnoremap <right> :<C-U>echohl ErrorMsg<Bar>echo "use l!"<Bar>echohl None<CR>gv
 inoremap <left> <nop>
 inoremap <down> <nop>
 inoremap <up> <nop>
