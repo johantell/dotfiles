@@ -27,8 +27,16 @@ set colorcolumn=81
 
 set noswapfile
 
-" Allow yanking to clipboard
-set clipboard=unnamed
+" system clipboard integration
+nnoremap gy "*y
+nnoremap gY "*y$
+nnoremap gp "*p
+nnoremap gP "*P
+
+vnoremap gy "*y
+vnoremap gp "*p
+vnoremap gP "*P
+
 
 " added by teo
 " allow unsaved buffers to be backgrounded
