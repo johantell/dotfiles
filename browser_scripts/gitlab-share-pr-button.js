@@ -4,7 +4,6 @@ function copyPrRequest() {
 
   let string = `**${prTitle}**\n${href}`;
 
-  console.log(string);
   copyToClipboard(string);
 }
 
@@ -23,12 +22,13 @@ function copyToClipboard(str) {
 function createCopyButton() {
   if(!document.location.href.includes("merge_requests")) return;
 
+  let existingButton = document.querySelector(".copy-pr-string-button")
   let prTitle = document.querySelector("h2.title");
 
-  if(!prTitle) return;
+  if(existingButton || !prTitle) return;
 
   let button = document.createElement("button");
-  button.classList.add("btn");
+  button.classList.add("btn", "copy-pr-string-button");
   button.textContent = "Copy PR string";
   button.addEventListener("click", () => {
     copyPrRequest();
