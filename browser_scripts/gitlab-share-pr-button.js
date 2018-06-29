@@ -2,7 +2,7 @@ function copyPrRequest() {
   let prTitle = document.querySelector("h2.title").textContent.trim();
   let href = document.location.href;
 
-  let string = `**${prTitle}**\n${href}`;
+  let string = `(pr) **${prTitle}**\n${href}`;
 
   copyToClipboard(string);
 }
