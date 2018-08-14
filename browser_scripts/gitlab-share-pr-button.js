@@ -1,40 +1,59 @@
-function copyPrRequest() {
-  let prTitle = document.querySelector("h2.title").textContent.trim();
-  let href = document.location.href;
+// ==UserScript==
+// @name         GitLab PR button
+// @namespace    https://mintcore.se/
+// @version      0.1
+// @description  Adds a copy PR string button on to gitlab Merge requests
+// @author       Johan Tell
+// @match        http://gitlab.a.snowmen.se/*
+// @grant        none
+// ==/UserScript==
 
-  let string = `(pr) **${prTitle}**\n${href}`;
+(function() {
+    'use strict';
 
-  copyToClipboard(string);
-}
+    function copyPrRequest() {
+        let prTitle = document.querySelector("h2.title").textContent.trim();
+        let href = document.location.href;
 
-function copyToClipboard(str) {
-  const el = document.createElement('textarea');
-  el.value = str;
-  el.setAttribute('readonly', '');
-  el.style.position = 'absolute';
-  el.style.left = '-9999px';
-  document.body.appendChild(el);
-  el.select();
-  document.execCommand('copy');
-  document.body.removeChild(el);
-};
+        let string = `(pr) **${prTitle}**\n${href}`;
 
-function createCopyButton() {
-  if(!document.location.href.includes("merge_requests")) return;
+        copyToClipboard(string);
+    }
 
-  let existingButton = document.querySelector(".copy-pr-string-button")
-  let prTitle = document.querySelector("h2.title");
+    function copyToClipboard(str) {
+        const el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style.position = 'absolute';
+        el.style.left = '-9999px';
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    };
 
-  if(existingButton || !prTitle) return;
+    function createCopyButton() {
+        if(!document.location.href.includes("merge_requests")) return;
 
-  let button = document.createElement("button");
-  button.classList.add("btn", "copy-pr-string-button");
-  button.textContent = "Copy PR string";
-  button.addEventListener("click", () => {
-    copyPrRequest();
-  });
+        let existingButton = document.querySelector(".copy-pr-string-button")
+        let editButton = document.querySelector(
+          ".detail-page-header-actions .js-issuable-edit"
+        );
 
-  prTitle.parentNode.insertBefore(button, prTitle.nextSibling);
-}
+        if(existingButton || !editButton) return;
 
-createCopyButton();
+        let button = document.createElement("button");
+        button.classList.add("btn", "btn-grouped", "copy-pr-string-button");
+        button.textContent = "Copy PR string";
+        button.addEventListener("click", () => {
+            copyPrRequest();
+        });
+
+        editButton.parentNode.insertBefore(button, editButton);
+    }
+
+    createCopyButton();
+
+})();
+
+
