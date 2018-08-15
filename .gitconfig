@@ -11,6 +11,8 @@
 
 [alias]
 	p = push-origin-or-fork
+	pushb = push -u origin $(current-branch)
+	current-branch = rev-parse --abbrev-ref HEAD
 	co = checkout
 	amend = commit -v --amend
 	c = commit -v
