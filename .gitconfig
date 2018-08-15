@@ -1,19 +1,18 @@
 [user]
-	name = Johan Tell
-	email = johan@mintcore.se
+  name = Johan Tell
+  email = johan@mintcore.se
 
 [push]
-	default = simple
+  default = simple
   followTags = true
 
 [pull]
-	rebase = true
+  rebase = true
 
 [alias]
-	p = push-origin-or-fork
-	pushb = push -u origin $(current-branch)
-	current-branch = rev-parse --abbrev-ref HEAD
-	co = checkout
-	amend = commit -v --amend
-	c = commit -v
-
+  p = push-origin-or-fork
+  pushb = push -u origin $(current-branch)
+  current-branch = rev-parse --abbrev-ref HEAD
+  co = checkout
+  amend = commit -v --amend
+  c = commit -v
