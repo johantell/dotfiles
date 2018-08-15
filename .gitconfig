@@ -11,7 +11,7 @@
 
 [alias]
   p = push-origin-or-fork
-  pushb = push -u origin $(current-branch)
+  pushb = "!f() { git push -u origin $(git current-branch); }; f"
   current-branch = rev-parse --abbrev-ref HEAD
   co = checkout
   amend = commit -v --amend
