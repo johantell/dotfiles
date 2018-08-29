@@ -1,10 +1,11 @@
-calleerlandsson/pick.vim
 ElmCast/elm-vim
-kchmck/vim-coffee-script
+calleerlandsson/pick.vim
 elixir-editors/vim-elixir
+kchmck/vim-coffee-script
 slashmili/alchemist.vim
 slim-template/vim-slim
 tpope/vim-commentary
+tpope/vim-dispatch
 tpope/vim-surround
 vim-ruby/vim-ruby
 w0rp/ale
