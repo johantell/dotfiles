@@ -6,6 +6,9 @@ source ~/user-configuration/bin/git-completion.bash
 # source: https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 source ~/user-configuration/bin/.git-prompt.sh
 
+# Set locale
+export LC_ALL=en_US.utf8
+
 # Show a different color on master branch
 function git_branch_color() {
   [[ $(__git_ps1 '%s') = 'master' ]] && echo '31' || echo '36';
