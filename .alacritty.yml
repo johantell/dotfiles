@@ -82,7 +82,7 @@ tabspaces: 8
 font:
   normal:
     family: Source Code Pro
-    style: Regular
+    style: Medium
 
   bold:
     family: Source Code Pro
@@ -90,9 +90,9 @@ font:
 
   italic:
     family: Source Code Pro
-    style: Italic
+    style: MediumIt
 
-  size: 14.0
+  size: 15.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
