@@ -165,12 +165,12 @@ colors:
   # Bright colors
   bright:
     black:   '0x666666'
-    red:     '0xff3334'
-    green:   '0x9ec400'
-    yellow:  '0xb68307'
-    blue:    '0x7aa6da'
+    red:     '0xbd3613'
+    green:   '0x475b62'
+    yellow:  '0x536870'
+    blue:    '0x708284'
     magenta: '0x5956ba'
-    cyan:    '0x54ced6'
+    cyan:    '0x819090'
     white:   '0xfcf4dc'
 
   # Dim colors
