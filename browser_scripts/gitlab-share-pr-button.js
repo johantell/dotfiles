@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitLab PR button
 // @namespace    https://mintcore.se/
-// @version      0.1
+// @version      0.2
 // @description  Adds a copy PR string button on to gitlab Merge requests
 // @author       Johan Tell
 // @match        http://gitlab.a.snowmen.se/*
@@ -15,7 +15,7 @@
         let prTitle = document.querySelector("h2.title").textContent.trim();
         let href = document.location.href;
 
-        let string = `(pr) **${prTitle}**\n${href}`;
+        let string = `:pr: *${prTitle}*\n${href}`;
 
         copyToClipboard(string);
     }
