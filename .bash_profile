@@ -43,6 +43,9 @@ export PATH="$PATH:$HOME/.local/bin"
 # Export /usr/local/sbin to path
 export PATH="/usr/local/sbin:$PATH"
 
+# Export /usr/local/bin to path
+export PATH="/usr/local/bin:$PATH"
+
 # Export ~/.carbo/bin for rust programs
 export PATH="$PATH:$HOME/.cargo/bin"
 
