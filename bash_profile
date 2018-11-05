@@ -1,10 +1,10 @@
 # Git autocompletion
 # source: https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
-source ~/user-configuration/bin/git-completion.bash
+source ~/dotfiles/bin/git-completion.bash
 
 # Git prompt
 # source: https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-source ~/user-configuration/bin/.git-prompt.sh
+source ~/dotfiles/bin/.git-prompt.sh
 
 # Set locale
 export LC_ALL=en_US.utf8
@@ -26,7 +26,7 @@ PS1="\[\033[33;1m\]\w\[\033[m\]\[\033[\$(git_branch_color)m\]\$(__git_ps1 '@%s')
 export HISTCONTROL=ignoredups
 
 # Allow mix escripts to be executed
-export PATH="/Users/johantell/.mix/escripts:$PATH"
+export PATH="$HOME/.mix/escripts:$PATH"
 
 # Enable history in iex
 export ERL_AFLAGS="-kernel shell_history enabled"
@@ -48,9 +48,6 @@ export PATH="/usr/local/bin:$PATH"
 
 # Export ~/.carbo/bin for rust programs
 export PATH="$PATH:$HOME/.cargo/bin"
-
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Helper methods
 alias la="ls -lah"

@@ -6,6 +6,9 @@ brew "reattach-to-user-namespace"
 brew "tmux"
 brew "vim"
 
+tap "thoughtbot/formulae"
+brew "rcm"
+
 cask "1password"
 cask "opera"
 cask "paw"

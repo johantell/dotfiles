@@ -1,2 +1,4 @@
-.vim/pack
-.vim/.netrwhist
+vim/pack
+vim/bundle
+vim/autoload
+vim/.netrwhist
