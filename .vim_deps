@@ -2,6 +2,7 @@ ElmCast/elm-vim
 calleerlandsson/pick.vim
 elixir-editors/vim-elixir
 kchmck/vim-coffee-script
+mhinz/vim-mix-format
 slashmili/alchemist.vim
 slim-template/vim-slim
 tpope/vim-commentary
