@@ -61,7 +61,7 @@ inoremap <up> <nop>
 inoremap <right> <nop>
 
 " ale configuration
-let g:ale_lint_delay = 500
+let g:ale_lint_delay = 100
 let g:ale_linters_explicit = 1
 
 " ale linter configuration
