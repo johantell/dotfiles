@@ -71,6 +71,11 @@ let g:ale_linters.ruby = ['rubocop']
 let g:ale_linters.javascript = ['eslint']
 let g:ale_linters.scss = ['sass-lint']
 
+let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}
+let g:ale_fixers.elixir = ['mix_format']
+
+nnoremap df :ALEFix<cr>
+
 cnoremap %% <c-r>=expand('%:h').'/'<cr>
 map <leader>e :edit %%
 map <leader>s :split %%
@@ -101,3 +106,10 @@ set listchars=tab:\ \ ,trail:.,extends:>,precedes:<,nbsp:+
 
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
+
+" Load all plugins now.
+" Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
