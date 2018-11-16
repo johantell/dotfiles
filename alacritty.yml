@@ -128,30 +128,16 @@ custom_cursor_colors: false
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-# Colors (Tomorrow Night Bright)
-colors:
-  # Default colors
+# Solarized light theme
+solarizedlight: &solarizedlight
   primary:
     background: '0xfcf4e4'
     foreground: '0x304145'
 
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #
-    #dim_foreground: '0x9a9a9a'
-    #bright_foreground: '0xffffff'
-
-  # Cursor colors
-  #
-  # These will only be used when the `custom_cursor_colors` field is set to `true`.
   cursor:
     text: '0x304145'
     cursor: '0xffffff'
 
-  # Normal colors
   normal:
     black:   '0x002831'
     red:     '0xd54e53'
@@ -162,7 +148,6 @@ colors:
     cyan:    '0x259286'
     white:   '0xeae3cb'
 
-  # Bright colors
   bright:
     black:   '0x666666'
     red:     '0xbd3613'
@@ -173,27 +158,37 @@ colors:
     cyan:    '0x819090'
     white:   '0xfcf4dc'
 
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  # dim:
-  #   black:   '0x333333'
-  #   red:     '0xf2777a'
-  #   green:   '0x99cc99'
-  #   yellow:  '0xffcc66'
-  #   blue:    '0x6699cc'
-  #   magenta: '0xcc99cc'
-  #   cyan:    '0x66cccc'
-  #   white:   '0xdddddd'
+customtheme: &customtheme
+  primary:
+    background: '0xfcf4e4'
+    foreground: '0x666666'
 
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #
-  #indexed_colors:
-  #  - { index: 16, color: '0x000000' }
+  cursor:
+    text: '0x304145'
+    cursor: '0xffffff'
+
+  normal:
+    black:   '0x002831'
+    red:     '0xd54e53'
+    green:   '0x738a05'
+    yellow:  '0xb68307'
+    blue:    '0x93a6b8'
+    magenta: '0xc61c6f'
+    cyan:    '0x0fa896'
+    white:   '0xeae3cb'
+
+  bright:
+    black:   '0x555555'
+    red:     '0xbd3613'
+    green:   '0x475b62'
+    yellow:  '0x536870'
+    blue:    '0x708284'
+    magenta: '0x5956ba'
+    cyan:    '0x819090'
+    white:   '0xfcf4dc'
+
+# Chosen theme
+colors: *customtheme
 
 # Visual Bell
 #
