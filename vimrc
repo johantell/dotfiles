@@ -11,6 +11,10 @@ set expandtab
 set tabstop=2
 set softtabstop=2
 
+" Split tabs to right and bottom
+set splitbelow
+set splitright
+
 " Activates bottom status bar
 set laststatus=2
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
