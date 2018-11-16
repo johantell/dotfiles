@@ -4,6 +4,7 @@ silent! colorscheme solarized
 
 set background=light
 set number
+set lazyredraw
 
 filetype plugin indent on
 set expandtab
@@ -29,6 +30,8 @@ set ttimeout ttimeoutlen=50
 highlight ColorColumn ctermbg=LightGrey
 highlight MatchParen cterm=underline,bold term=underline,bold ctermfg=33 ctermbg=NONE
 set colorcolumn=81
+
+highlight LineNr ctermfg=grey
 
 set noswapfile
 
