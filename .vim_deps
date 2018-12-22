@@ -3,6 +3,7 @@ calleerlandsson/pick.vim
 elixir-editors/vim-elixir
 kchmck/vim-coffee-script
 mhinz/vim-mix-format
+moorereason/vim-markdownfmt
 slashmili/alchemist.vim
 slim-template/vim-slim
 tpope/vim-commentary

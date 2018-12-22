@@ -81,6 +81,7 @@ let g:ale_linters.scss = ['sass-lint']
 let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}
 let g:ale_fixers.elixir = ['mix_format']
 let g:ale_fixers.ruby = ['rubocop']
+let g:ale_fixers.markdown = ['markdownfmt']
 
 nnoremap df :ALEFix<cr>
 
