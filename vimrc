@@ -74,14 +74,15 @@ let g:ale_linters_explicit = 1
 " ale linter configuration
 let g:ale_linters = {}
 let g:ale_linters.elixir = ['credo']
-let g:ale_linters.ruby = ['rubocop']
 let g:ale_linters.javascript = ['eslint']
+let g:ale_linters.ruby = ['rubocop']
 let g:ale_linters.scss = ['sass-lint']
 
 let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}
 let g:ale_fixers.elixir = ['mix_format']
-let g:ale_fixers.ruby = ['rubocop']
+let g:ale_fixers.javascript = ['eslint']
 let g:ale_fixers.markdown = ['markdownfmt']
+let g:ale_fixers.ruby = ['rubocop']
 
 nnoremap df :ALEFix<cr>
 
