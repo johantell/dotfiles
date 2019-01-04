@@ -17,3 +17,4 @@
   co = checkout
   amend = commit -v --amend
   c = commit -v
+  mlog = log --oneline master..
