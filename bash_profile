@@ -54,6 +54,9 @@ export PATH="$PATH:$HOME/.cargo/bin"
 # Helper methods
 alias la="ls -lah"
 
+# Use hub as a wrapper for git
+alias git="hub"
+
 # Alias for deleting merged branches from git
 alias burn_branches='git branch | egrep -v "(^\*|master|dev)" | xargs git branch -D'
 
