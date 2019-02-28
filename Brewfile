@@ -12,6 +12,7 @@ tap "thoughtbot/formulae"
 brew "rcm"
 
 cask "1password"
+cask "alacritty"
 cask "dash"
 cask "firefox"
 cask "font-source-code-pro"
