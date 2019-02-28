@@ -59,9 +59,3 @@ alias git="hub"
 
 # Alias for deleting merged branches from git
 alias burn_branches='git branch | egrep -v "(^\*|master|dev)" | xargs git branch -D'
-
-# Source ASDF
-export PATH="$PATH:$HOME/.asdf/bin"
-source $HOME/.asdf/asdf.sh
-source $HOME/.asdf/completions/asdf.bash
-
