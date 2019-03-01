@@ -155,8 +155,8 @@ customtheme: &customtheme
     foreground: '0x666666'
 
   cursor:
-    text: '0x304145'
-    cursor: '0xffffff'
+    text: '0xffffff'
+    cursor: '0x808080'
 
   normal:
     black:   '0x002831'
