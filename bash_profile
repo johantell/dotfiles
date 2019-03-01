@@ -62,3 +62,4 @@ alias burn_branches='git branch | egrep -v "(^\*|master|dev)" | xargs git branch
 
 # export where ASDF is stored
 export ASDF_DIR=$(brew --prefix asdf)
+source "$ASDF_DIR/asdf.sh"
