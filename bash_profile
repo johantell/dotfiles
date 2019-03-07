@@ -13,7 +13,7 @@ export LANG=en_US.UTF-8
 
 # Show a different color on master branch
 function git_branch_color() {
-  [[ $(__git_ps1 '%s') = 'master' ]] && echo '31' || echo '36';
+  [[ $(__git_ps1 '%s') =~ ^(master|develop)$ ]] && echo '31' || echo '36';
 }
 
 # Set vim as default editor
