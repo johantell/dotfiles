@@ -6,6 +6,7 @@ brew "mas"
 brew "pick"
 brew "reattach-to-user-namespace"
 brew "tmux"
+brew "tree"
 brew "vim"
 
 tap "thoughtbot/formulae"
