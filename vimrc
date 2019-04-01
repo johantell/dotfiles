@@ -72,6 +72,7 @@ inoremap <right> <nop>
 " ale configuration
 let g:ale_lint_delay = 100
 let g:ale_linters_explicit = 1
+let g:ale_ruby_rubocop_executable = 'bin/rubocop'
 
 " ale linter configuration
 let g:ale_linters = {}
