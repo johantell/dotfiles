@@ -33,9 +33,6 @@ export PATH="$HOME/.mix/escripts:$PATH"
 # Enable history in iex
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-# Export rvm bins into path
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # Export ~/bin into path
 export PATH="$PATH:$HOME/bin"
 
