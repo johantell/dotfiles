@@ -1,3 +1,6 @@
+# Homebrew completion
+source ~/dotfiles/bin/homebrew-completion.bash
+
 # Git autocompletion
 # source: https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 source ~/dotfiles/bin/git-completion.bash
