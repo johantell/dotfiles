@@ -31,6 +31,9 @@ alias git="hub"
 # Alias for deleting merged branches from git
 alias burn_branches='git branch | egrep -v "(^\*|master|dev)" | xargs git branch -D'
 
+bindkey "^N" down-line-or-search
+bindkey "^P" up-line-or-search
+
 # export where ASDF is stored
 export ASDF_DIR=$(brew --prefix asdf)
 source "$ASDF_DIR/asdf.sh"
