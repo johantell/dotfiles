@@ -1,3 +1,5 @@
+autoload -U compinit && compinit
+
 # Git prompt
 # source: https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 source ~/dotfiles/bin/.git-prompt.sh
