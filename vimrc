@@ -45,10 +45,9 @@ vnoremap gy "*y
 vnoremap gp "*p
 vnoremap gP "*P
 
-
-" added by teo
 " allow unsaved buffers to be backgrounded
 set hidden
+
 " toggle between the two most recently edited files
 nmap <leader><leader> :edit #<CR>
 set incsearch
@@ -72,20 +71,12 @@ inoremap <right> <nop>
 " ale configuration
 let g:ale_lint_delay = 100
 let g:ale_linters_explicit = 1
-let g:ale_ruby_rubocop_executable = 'bin/rubocop'
 
-" ale linter configuration
+" ale linter/fixer configuration.
+" language specific configuration can be found in
+" vim/ftplugin/*.vim
 let g:ale_linters = {}
-let g:ale_linters.elixir = ['credo']
-let g:ale_linters.javascript = ['eslint']
-let g:ale_linters.ruby = ['rubocop']
-let g:ale_linters.scss = ['sass-lint']
-
 let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}
-let g:ale_fixers.elixir = ['mix_format']
-let g:ale_fixers.javascript = ['eslint']
-let g:ale_fixers.markdown = ['markdownfmt']
-let g:ale_fixers.ruby = ['rubocop']
 
 nnoremap df :ALEFix<cr>
 
