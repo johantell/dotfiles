@@ -1,0 +1,17 @@
+# Export /usr/local/bin to path
+export PATH="/usr/local/bin:$PATH"
+
+# Export /usr/local/sbin to path
+export PATH="/usr/local/sbin:$PATH"
+
+# Export ~/.local/bin into path
+export PATH="$PATH:$HOME/.local/bin"
+
+# Export ~/bin into path
+export PATH="$PATH:$HOME/bin"
+
+# Allow mix escripts to be executed
+export PATH="$HOME/.mix/escripts:$PATH"
+
+# Export ~/.cargo/bin for rust programs
+export PATH="$PATH:$HOME/.cargo/bin"

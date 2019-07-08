@@ -21,21 +21,3 @@ export HISTCONTROL=ignoredups
 # Enable history in iex
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-# Allow mix escripts to be executed
-export PATH="$HOME/.mix/escripts:$PATH"
-
-# Export ~/bin into path
-export PATH="$PATH:$HOME/bin"
-
-# Export ~/.local/bin into path
-export PATH="$PATH:$HOME/.local/bin"
-
-# Export /usr/local/sbin to path
-export PATH="/usr/local/sbin:$PATH"
-
-# Export /usr/local/bin to path
-export PATH="/usr/local/bin:$PATH"
-
-# Export ~/.carbo/bin for rust programs
-export PATH="$PATH:$HOME/.cargo/bin"
-
