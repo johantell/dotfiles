@@ -1,7 +1,0 @@
-Host mintcore
-  Hostname mintcore.se
-  User deploy
-
-Host stop_deportations
-  Hostname 159.65.123.4
-  User deploy
