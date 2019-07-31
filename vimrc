@@ -52,7 +52,7 @@ set hidden
 nmap <leader><leader> :edit #<CR>
 set incsearch
 
-nnoremap <C-p> :Explore<CR>
+nnoremap <C-e> :Explore<CR>
 
 " Remap arrow keys to prevent usage
 nnoremap <left> :echohl ErrorMsg<Bar>echo "use h!"<Bar>echohl None<CR>
