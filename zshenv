@@ -21,3 +21,5 @@ export HISTCONTROL=ignoredups
 # Enable history in iex
 export ERL_AFLAGS="-kernel shell_history enabled"
 
+# Don't update homebrew when running `install` command
+export HOMEBREW_NO_AUTO_UPDATE=1
