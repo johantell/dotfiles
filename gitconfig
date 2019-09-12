@@ -1,6 +1,6 @@
 [user]
-  name = Johan Tell
-  email = johan@mintcore.se
+	name = Johan Tell
+	email = johan@mintcore.se
 
 [push]
   default = simple
@@ -18,3 +18,10 @@
   amend = commit -v --amend
   c = commit -v
   mlog = log --oneline origin/master..
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[diff "elixir"]
+	xfuncname = ^[ \\t]*((def(macro|module|impl|guard|protocol)?p?|test)[ \\t].*)$
