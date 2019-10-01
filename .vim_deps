@@ -8,6 +8,7 @@ mhinz/vim-mix-format
 moorereason/vim-markdownfmt
 mxw/vim-jsx
 pangloss/vim-javascript
+peitalin/vim-jsx-typescript
 slashmili/alchemist.vim
 slim-template/vim-slim
 tpope/vim-commentary
