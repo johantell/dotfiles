@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Github PR button
 // @namespace    https://mintcore.se/
-// @version      0.2
+// @version      0.2.1
 // @description  Adds a copy PR string button on to github pull requests
 // @author       Johan Tell
 // @match        https://github.com/*
@@ -41,8 +41,6 @@
     const container = document.querySelector(".gh-header-actions")
 
     let existingButton = document.querySelector(SHARE_PR_BUTTON_CLASS);
-
-    console.log({container, existingButton});
 
     if(existingButton) return;
 
