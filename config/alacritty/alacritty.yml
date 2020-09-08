@@ -14,6 +14,8 @@
   #TERM: xterm-256color
 
 window:
+  dynamic_title: true
+
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
@@ -57,27 +59,6 @@ scrolling:
   # scrollback is enabled (history > 0).
   multiplier: 3
 
-  # Faux Scrolling
-  #
-  # The `faux_multiplier` setting controls the number of lines the terminal
-  # should scroll when the alternate screen buffer is active. This is used
-  # to allow mouse scrolling for applications like `man`.
-  #
-  # Specifying `0` will disable faux scrolling.
-  faux_multiplier: 3
-
-  # Scroll to the bottom when new text is written to the terminal.
-  auto_scroll: false
-
-# Spaces per Tab (changes require restart)
-#
-# This setting defines the width of a tab in cells.
-#
-# Some applications, like Emacs, rely on knowing about the width of a tab.
-# To prevent unexpected behavior in these applications, it's also required to
-# change the `it` value in terminfo when altering this setting.
-tabspaces: 8
-
 # Font configuration (changes require restart)
 font:
   normal:
@@ -92,7 +73,7 @@ font:
     family: Source Code Pro
     style: MediumIt
 
-  size: 15.0
+  size: 16.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -128,7 +109,7 @@ solarizedlight: &solarizedlight
 
   cursor:
     text: '0x304145'
-    cursor: '0xffffff'
+    cursor: '0x808080'
 
   normal:
     black:   '0x002831'
@@ -179,6 +160,31 @@ customtheme: &customtheme
     cyan:    '0x819090'
     white:   '0xfcf4dc'
 
+ayu_dark: &ayu_dark
+  primary:
+    background: '0x0A0E14'
+    foreground: '0xB3B1AD'
+
+  normal:
+    black: '0x01060E'
+    red: '0xEA6C73'
+    green: '0x91B362'
+    yellow: '0xF9AF4F'
+    blue: '0x53BDFA'
+    magenta: '0xFAE994'
+    cyan: '0x90E1C6'
+    white: '0xC7C7C7'
+
+  bright:
+    black: '0x686868'
+    red: '0xF07178'
+    green: '0xC2D94C'
+    yellow: '0xFFB454'
+    blue: '0x59C2FF'
+    magenta: '0xFFEE99'
+    cyan: '0x95E6CB'
+    white: '0xFFFFFF'
+
 # Chosen theme
 colors: *customtheme
 
@@ -203,7 +209,7 @@ colors: *customtheme
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
 
@@ -247,8 +253,6 @@ selection:
 
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: false
-
-dynamic_title: true
 
 cursor:
   style: Block
