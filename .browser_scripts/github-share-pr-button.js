@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Github PR button
 // @namespace    https://mintcore.se/
-// @version      0.2.1
+// @version      0.2.2
 // @description  Adds a copy PR string button on to github pull requests
 // @author       Johan Tell
 // @match        https://github.com/*
@@ -11,11 +11,11 @@
 (function() {
   'use strict';
 
-  const SHARE_PR_BUTTON_CLASS = ".copy-pr-string-button"
-  const PR_TITLE_HEADER_CLASS = ".js-issue-title";
+  const SHARE_PR_BUTTON_CLASS = "copy-pr-string-button";
+  const PR_TITLE_HEADER_CLASS = "js-issue-title";
 
   function copyPrRequest() {
-    let prTitle = document.querySelector(PR_TITLE_HEADER_CLASS).textContent.trim();
+    let prTitle = document.querySelector(`.${PR_TITLE_HEADER_CLASS}`).textContent.trim();
     let href = document.location.href;
 
     let string = `:pr: *${prTitle}* \n${href}`;
@@ -40,7 +40,7 @@
 
     const container = document.querySelector(".gh-header-actions")
 
-    let existingButton = document.querySelector(SHARE_PR_BUTTON_CLASS);
+    let existingButton = findExistingButton();
 
     if(existingButton) return;
 
@@ -60,7 +60,14 @@
     return document.location.href.includes("/pull/");
   }
 
+  function findExistingButton() {
+    return document.querySelector(`.${SHARE_PR_BUTTON_CLASS}`);
+  }
+
   createCopyButton();
+  setInterval(function() {
+    if (findExistingButton() != null) return;
+
+    createCopyButton();
+  }, 1000);
 })();
-
-
