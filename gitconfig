@@ -25,3 +25,5 @@
 	required = true
 [diff "elixir"]
 	xfuncname = ^[ \\t]*((def(macro|module|impl|guard|protocol)?p?|test)[ \\t].*)$
+[commit]
+	template = /Users/johantell/.config/git/.gitmessage
