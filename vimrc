@@ -28,10 +28,11 @@ set shiftwidth=2
 set ttimeout ttimeoutlen=50
 
 highlight ColorColumn ctermbg=LightGrey
-highlight MatchParen cterm=underline,bold term=underline,bold ctermfg=33 ctermbg=NONE
 set colorcolumn=81
+highlight MatchParen cterm=underline,bold term=underline,bold ctermfg=33 ctermbg=NONE
 
 highlight LineNr ctermfg=grey
+highlight StatusLine ctermbg=0 ctermfg=7
 
 set noswapfile
 
