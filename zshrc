@@ -34,7 +34,7 @@ alias git="hub"
 alias wtc="what_the_color"
 
 # Alias for deleting merged branches from git
-alias burn_branches='git branch | egrep -v "(^\*|master|dev)" | xargs git branch -D'
+alias burn_branches='git branch | egrep -v "(^\*|master|main)" | xargs git branch -D'
 
 # Alias for listing the most recently committed local branches
 alias last-used-branches='git for-each-ref --sort="-committerdate" --format="%(committerdate)%09%(refname)" refs/heads | sed -e "s-refs/heads/--"'
