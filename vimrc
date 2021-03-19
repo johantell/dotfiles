@@ -118,3 +118,12 @@ packloadall
 " Load all of the helptags now, after plugins have been loaded.
 " All messages and errors will be ignored.
 silent! helptags ALL
+
+" Inline the live debugging tool
+:function! Debug()
+:  let text = "require 'pry'; binding.pry;"
+:  call feedkeys('o', 'i')
+:  call feedkeys(text)
+:  call feedkeys("\<Esc>")
+:endfunction
+command Debug call Debug()
