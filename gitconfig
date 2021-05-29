@@ -17,7 +17,7 @@
   co = checkout
   amend = commit -v --amend
   c = commit -v
-  mlog = log --oneline origin/master..
+  mlog = "!f() { git log --oneline $(git rev-parse --abbrev-ref origin/HEAD)..; }; f"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -27,3 +27,5 @@
 	xfuncname = ^[ \\t]*((def(macro|module|impl|guard|protocol)?p?|test)[ \\t].*)$
 [commit]
 	template = /Users/johantell/.config/git/.gitmessage
+[init]
+	defaultBranch = main
