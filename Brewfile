@@ -13,10 +13,9 @@ tap "thoughtbot/formulae"
 brew "rcm"
 
 tap "homebrew/cask-fonts"
-cask "font-source-code-pro"
+brew "font-fira-code"
 
 cask "1password"
-cask "alacritty"
 cask "dash"
 cask "firefox"
 cask "paw"
