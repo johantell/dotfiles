@@ -39,9 +39,11 @@ alias burn_branches='git branch | egrep -v "(^\*|master|main)" | xargs git branc
 # Alias for listing the most recently committed local branches
 alias last-used-branches='git for-each-ref --sort="-committerdate" --format="%(committerdate)%09%(refname)" refs/heads | sed -e "s-refs/heads/--"'
 
-
 bindkey "^N" down-line-or-search
 bindkey "^P" up-line-or-search
+
+# Expose homebrew to shell
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # export where ASDF is stored
 export ASDF_DIR=$(brew --prefix asdf)
