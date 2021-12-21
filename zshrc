@@ -1,4 +1,4 @@
-autoload -U compinit && compinit
+autoload -Uz compinit && compinit
 
 # Git prompt
 # source: https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh

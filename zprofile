@@ -15,3 +15,6 @@ export PATH="$HOME/.mix/escripts:$PATH"
 
 # Export ~/.cargo/bin for rust programs
 export PATH="$PATH:$HOME/.cargo/bin"
+
+# Export zsh completions in front of fpath
+export fpath=("$(brew --prefix)/share/zsh/site-functions" $fpath)
