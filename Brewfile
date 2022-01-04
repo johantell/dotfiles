@@ -19,9 +19,7 @@ cask "1password"
 cask "dash"
 cask "firefox"
 cask "paw"
-cask "shortcuts"
 cask "slack"
-cask "sourcetree"
 
 mas "Airmail 3", id: 918858936
 mas "Bear", id: 1091189122
