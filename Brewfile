@@ -1,4 +1,3 @@
-brew "asdf"
 brew "git"
 brew "gpg"
 brew "hub"
@@ -20,9 +19,8 @@ cask "dash"
 cask "firefox"
 cask "paw"
 cask "slack"
+cask "obsidian"
 
 mas "Airmail 3", id: 918858936
-mas "Bear", id: 1091189122
 mas "Fantastical 2", id: 975937182
 mas "Things 3", id: 904280696
-mas "Day One", id: 1055511498
