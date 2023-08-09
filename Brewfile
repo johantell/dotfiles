@@ -7,6 +7,7 @@ brew "reattach-to-user-namespace"
 brew "tmux"
 brew "tree"
 brew "vim"
+brew "hx"
 
 tap "thoughtbot/formulae"
 brew "rcm"
