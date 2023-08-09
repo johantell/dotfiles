@@ -45,6 +45,5 @@ bindkey "^P" up-line-or-search
 # Expose homebrew to shell
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# export where ASDF is stored
-export ASDF_DIR=$(brew --prefix asdf)
-source "$ASDF_DIR/asdf.sh"
+# load ASDF
+. $HOME/.asdf/asdf.sh
