@@ -1,8 +1,8 @@
 syntax on
 
+set background=light
 silent! colorscheme solarized
 
-set background=light
 set number
 set lazyredraw
 
@@ -27,7 +27,7 @@ set shiftwidth=2
 
 set ttimeout ttimeoutlen=50
 
-highlight ColorColumn ctermbg=LightGrey
+highlight ColorColumn ctermbg=black
 set colorcolumn=81
 highlight MatchParen cterm=underline,bold term=underline,bold ctermfg=33 ctermbg=NONE
 
@@ -126,4 +126,5 @@ silent! helptags ALL
 :  call feedkeys(text)
 :  call feedkeys("\<Esc>")
 :endfunction
-command Debug call Debug()
+
+command! Debug call Debug()

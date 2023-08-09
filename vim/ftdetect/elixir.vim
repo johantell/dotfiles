@@ -1,5 +1,6 @@
-au BufRead,BufNewFile *.ex,*.exs call s:setf('elixir')
-au BufRead,BufNewFile *.eex call s:setf('eelixir')
+au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
+au BufRead,BufNewFile *.eex,*.heex,*.leex,*.sface,*.lexs set filetype=eelixir
+au BufRead,BufNewFile mix.lock set filetype=elixir
 au BufRead,BufNewFile * call s:DetectElixir()
 
 function! s:setf(filetype) abort
