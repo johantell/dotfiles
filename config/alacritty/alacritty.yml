@@ -186,7 +186,7 @@ ayu_dark: &ayu_dark
     white: '0xFFFFFF'
 
 # Chosen theme
-colors: *customtheme
+colors: *ayu_dark
 
 # Visual Bell
 #
