@@ -9,7 +9,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Set vim as default editor
-export EDITOR="vim"
+export EDITOR="hx"
 
 # Terminal colors
 export CLICOLOR=1
