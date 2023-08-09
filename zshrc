@@ -37,7 +37,7 @@ alias wtc="what_the_color"
 alias burn_branches='git branch | egrep -v "(^\*|master|main)" | xargs git branch -D'
 
 # Alias for listing the most recently committed local branches
-alias last-used-branches='git for-each-ref --sort="committerdate" --format="%(committerdate)%09%(refname)" refs/heads | sed -e "s-refs/heads/--"'
+alias last_used_branches='git for-each-ref --sort="committerdate" --format="%(committerdate)%09%(refname)" refs/heads | sed -e "s-refs/heads/--"'
 
 bindkey "^N" down-line-or-search
 bindkey "^P" up-line-or-search
