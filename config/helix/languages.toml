@@ -1,0 +1,12 @@
+[[language]]
+name = "elixir"
+scope = "source.elixir"
+file-types = ["ex", "exs"]
+shebangs = ["elixir"]
+roots = ["mix.exs"]
+auto-format = true
+diagnostic-severity = "Hint"
+comment-token = "#"
+indent = {tab-width = 2, unit = " "}
+language-server = { command = "/Users/johantell/Projects/lexical/_build/prod/rel/lexical/start_lexical.sh" }
+config = { elixirLS.dialyzerEnabled = false } 
