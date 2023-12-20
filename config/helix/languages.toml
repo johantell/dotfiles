@@ -1,3 +1,9 @@
+[language-server.lexical]
+command = "/Users/johantell/Projects/lexical/_build/dev/package/lexical/bin/start_lexical.sh"
+
+[language-server.ltex]
+command = "/opt/homebrew/opt/ltex-ls/bin/ltex-ls"
+
 [[language]]
 name = "elixir"
 scope = "source.elixir"
@@ -8,5 +14,18 @@ auto-format = true
 diagnostic-severity = "Hint"
 comment-token = "#"
 indent = {tab-width = 2, unit = " "}
-language-server = { command = "/Users/johantell/Projects/lexical/_build/prod/rel/lexical/start_lexical.sh" }
-config = { elixirLS.dialyzerEnabled = false } 
+language-servers = ["lexical"]
+
+[[language]]
+name = "heex"
+language-servers = ["lexical"]
+
+[[language]]
+name = "markdown"
+language-servers = ["ltex"]
+file-types = ["md", "txt"]
+scope = "text.markdown"
+roots = []
+
+[commands.elixir]
+totest = "sh ecto 'test';"
