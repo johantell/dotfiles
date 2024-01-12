@@ -14,11 +14,11 @@ auto-format = true
 diagnostic-severity = "Hint"
 comment-token = "#"
 indent = {tab-width = 2, unit = " "}
-language-servers = ["lexical"]
+language-servers = ["elixir-ls"]
 
 [[language]]
 name = "heex"
-language-servers = ["lexical"]
+language-servers = ["elixir-ls"]
 
 [[language]]
 name = "markdown"
