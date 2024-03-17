@@ -14,16 +14,18 @@ auto-format = true
 diagnostic-severity = "Hint"
 comment-token = "#"
 indent = {tab-width = 2, unit = " "}
-language-servers = ["elixir-ls"]
+language-servers = ["lexical"]
 
 [[language]]
 name = "heex"
-language-servers = ["elixir-ls"]
+language-servers = ["lexical"]
 
 [[language]]
 name = "markdown"
-language-servers = ["ltex"]
+language-servers = ["ltex", "marksman"]
 file-types = ["md", "txt"]
+auto-format = true
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
 scope = "text.markdown"
 roots = []
 
