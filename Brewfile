@@ -6,15 +6,35 @@ brew "pick"
 brew "reattach-to-user-namespace"
 brew "tmux"
 brew "tree"
-brew "vim"
-brew "hx"
+brew "helix"
+# brew "yazi" # Terminal file management
 
+# Yazi dependencies
+brew "file"
+brew "ffmpegthumbnailer" 
+brew "unar"
+brew "jq"
+brew "poppler"
+brew "fd"
+brew "fzf"
+brew "ripgrep"
+brew "zoxide"
+
+# Language servers
+brew "elixir-ls" # Elixir LSP
+brew "dprint" # Markdown formatter
+brew "marksman" # Markdown LSP
+
+# Dot file managemement
 tap "thoughtbot/formulae"
 brew "rcm"
 
+# Fonts
 tap "homebrew/cask-fonts"
-brew "font-fira-code"
+cask "font-fira-code"
+cask "font-symbols-only-nerd-font"
 
+# Applications
 cask "1password"
 cask "dash"
 cask "firefox"
@@ -22,6 +42,5 @@ cask "paw"
 cask "slack"
 cask "obsidian"
 
-mas "Airmail 3", id: 918858936
 mas "Fantastical 2", id: 975937182
 mas "Things 3", id: 904280696
