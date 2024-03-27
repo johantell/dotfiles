@@ -7,7 +7,7 @@ brew "reattach-to-user-namespace"
 brew "tmux"
 brew "tree"
 brew "helix"
-# brew "yazi" # Terminal file management
+brew "yazi" # Terminal file management
 
 # Yazi dependencies
 brew "file"
