@@ -38,10 +38,11 @@ S = "surround_add" # Would be nice to be able to do something after this but it 
 
 [keys.normal.space]
 o = ":sh tmux popup -d $(PWD)"
+f = ":sh tmux display-popup -E yazi $(PWD)"
 v = ["vsplit_new", "file_picker_in_current_directory"]
 h = ["hsplit_new", "file_picker_in_current_directory"]
 "space" = "file_picker_in_current_directory"
-
+ 
 [keys.insert]
 up = "no_op"
 down = "no_op"
