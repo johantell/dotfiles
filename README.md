@@ -9,7 +9,4 @@ brew bundle
 
 # Run rcrc to create symlinks to home folder
 RCRC=$HOME/dotfiles/rcrc rcup
-
-# Fetch vim dependencies
-./setup/vim_dependencies
 ```
