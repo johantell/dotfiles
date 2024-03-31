@@ -45,5 +45,8 @@ bindkey "^P" up-line-or-search
 # Expose homebrew to shell
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Integrate FZF
+eval "$(fzf --zsh)"
+
 # load ASDF
 . $HOME/.asdf/asdf.sh

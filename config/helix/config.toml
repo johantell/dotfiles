@@ -6,6 +6,7 @@ mouse = false
 idle-timeout = 100
 cursorline = true
 rulers = [120]
+popup-border = "all"
 
 [editor.indent-guides]
 render = true
