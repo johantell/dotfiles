@@ -1,6 +1,10 @@
 [language-server.lexical]
 command = "/Users/johantell/Projects/lexical/_build/dev/package/lexical/bin/start_lexical.sh"
 
+[language-server.nextls]
+command = "nextls"
+args = ["--stdio=true"]
+
 [language-server.ltex]
 command = "/opt/homebrew/opt/ltex-ls/bin/ltex-ls"
 
@@ -29,5 +33,9 @@ formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
 scope = "text.markdown"
 roots = []
 
-[commands.elixir]
-totest = "sh ecto 'test';"
+[[language]]
+name = "git-commit"
+language-servers = ["ltex", "marksman"]
+scope = "text.markdown"
+soft-wrap = { enable = true, wrap-at-text-width = true }
+text-width = 80
