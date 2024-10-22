@@ -39,3 +39,11 @@ language-servers = ["ltex", "marksman"]
 scope = "text.markdown"
 soft-wrap = { enable = true, wrap-at-text-width = true }
 text-width = 80
+
+[[language]]
+name = "git-pull-request"
+file-types = [{ glob = ".git/PULLREQ_EDITMSG" }]
+language-servers = ["ltex", "marksman"]
+scope = "text.markdown"
+soft-wrap = { enable = true, wrap-at-text-width = true }
+text-width = 80
