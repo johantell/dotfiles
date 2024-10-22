@@ -4,6 +4,7 @@ theme = "github_dark"
 line-number = "absolute"
 mouse = false
 idle-timeout = 100
+completion-timeout = 50
 cursorline = true
 rulers = [120]
 popup-border = "all"
