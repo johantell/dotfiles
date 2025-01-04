@@ -15,7 +15,7 @@ file-types = ["ex", "exs"]
 shebangs = ["elixir"]
 roots = ["mix.exs"]
 auto-format = true
-diagnostic-severity = "Hint"
+diagnostic-severity = "hint"
 comment-token = "#"
 indent = {tab-width = 2, unit = " "}
 language-servers = ["lexical"]
