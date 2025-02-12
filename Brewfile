@@ -7,6 +7,7 @@ brew "reattach-to-user-namespace"
 brew "tmux"
 brew "tree"
 brew "helix"
+brew "asdf"
 brew "yazi" # Terminal file management
 
 # Yazi dependencies
@@ -38,7 +39,7 @@ cask "font-symbols-only-nerd-font"
 cask "1password"
 cask "dash"
 cask "firefox"
-cask "paw"
+cask "rapidapi"
 cask "slack"
 cask "obsidian"
 
