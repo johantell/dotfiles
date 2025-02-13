@@ -10,6 +10,9 @@ export PATH="$PATH:$HOME/.local/bin"
 # Export ~/bin into path
 export PATH="$PATH:$HOME/bin"
 
+# Export asdf shims into path
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
 # Allow mix escripts to be executed
 export PATH="$HOME/.mix/escripts:$PATH"
 
