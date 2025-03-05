@@ -48,6 +48,24 @@ f = ":sh tmux display-popup -E yazi $(PWD)"
 v = ["vsplit_new", "file_picker_in_current_directory"]
 h = ["hsplit_new", "file_picker_in_current_directory"]
 "space" = "file_picker_in_current_directory"
+
+[keys.normal.space.t]
+# Open test file (test_file_lookup only works for elixir right now)
+t = ":open %sh{~/.bin/helix/test_file_lookup $(realpath %{buffer_name})}"
+# Run the full mix test suite
+a = [":sh mix test 2>&1 | tee /tmp/helix_output.log | tail -n 19"]
+# Run the mix test suite for the current file
+r = [":sh mix test %{buffer_name} 2>&1 | tee /tmp/helix_output.log | tail -n 19"]
+# Run the test suite for the current file & line
+l = [":sh mix test %{buffer_name}:%{cursor_line}"]
+# Open the output of the last ran test suite
+o = [":open /tmp/helix_output.log"]
+
+
+[keys.normal.space.i]
+# Show blame info for current line
+b = ":sh git -C $(dirname $(realpath %{buffer_name})) blame -L %{cursor_line},%{cursor_line} $(realpath %{buffer_name})"
+
  
 [keys.insert]
 up = "no_op"
