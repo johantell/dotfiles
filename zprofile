@@ -21,3 +21,6 @@ export PATH="$PATH:$HOME/.cargo/bin"
 
 # Export zsh completions in front of fpath
 export fpath=("$(brew --prefix)/share/zsh/site-functions" $fpath)
+
+# Export postgres path into env (not sure if needed)
+# export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
