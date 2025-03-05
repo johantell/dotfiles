@@ -1,6 +1,6 @@
 [user]
-	name = Johan Tell
-	email = johan@mintcore.se
+  name = Johan Tell
+  email = johan@mintcore.se
 
 [push]
   default = simple
@@ -8,6 +8,18 @@
 
 [pull]
   rebase = true
+
+[merge]
+  conlictstyle = zdiff3
+
+[branch]
+  sort = -committerdate
+
+[tag]
+  sort = version:refname
+
+[init]
+  defaultBranch = main
 
 [alias]
   p = push-origin-or-fork
@@ -17,15 +29,34 @@
   co = checkout
   amend = commit -v --amend
   c = commit -v
+  s = status
+  ri = rebase origin/main -i
   mlog = "!f() { git log --oneline $(git rev-parse --abbrev-ref origin/HEAD)..; }; f"
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+
 [diff "elixir"]
-	xfuncname = ^[ \\t]*((def(macro|module|impl|guard|protocol)?p?|test)[ \\t].*)$
+  xfuncname = ^[ \\t]*((def(macro|module|impl|guard|protocol)?p?|test)[ \\t].*)$
+
+[rebase]
+  autoSquash = true
+  autoStash = true
+  updateRefs = true
+
 [commit]
-	template = /Users/johantell/.config/git/.gitmessage
-[init]
-	defaultBranch = main
+  template = /Users/johantell/.config/git/.gitmessage
+  verbose = true
+
+[help]
+  autocorrect = prompt
