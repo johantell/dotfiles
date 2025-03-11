@@ -1,0 +1,36 @@
+inherits = "github_dark"
+
+"ui.background" = { bg = "#121212" }
+
+attribute = "fg.default"
+keyword = "scale.red.3"
+"keyword.directive" = "scale.red.3"
+namespace = "scale.red.2"
+punctuation = "fg.default"
+"punctuation.delimiter" = "fg.default"
+operator = "scale.blue.1"
+special = "scale.blue.1"
+"variable.other.member" = "scale.blue.1"
+variable = "fg.default"
+"variable.parameter" = "#909090"
+"variable.builtin" = "scale.red.3"
+type = "scale.orange.2"
+"type.builtin" = "scale.blue.2"
+function = "scale.purple.2"
+"function.macro" = "scale.purple.2"
+tag = "scale.green.1"
+
+comment = "tw.slate-600"
+# "comment.line" = { fg = "default", modifiers = ["bold", "italic"] }
+# "comment.block" = { modifiers = ["bold", "italic"] }
+
+constant = "scale.blue.2"
+"constant.builtin" = "scale.blue.2"
+string = "scale.blue.1"
+"constant.numeric" = "scale.blue.2"
+"constant.character.escape" = "scale.blue.2"
+label = "scale.red.3"
+
+[palette]
+"tw.slate-600" = "#475569"
+"tw.blue-700" = "#1d4ed8"

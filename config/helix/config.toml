@@ -44,7 +44,13 @@ S = "surround_add" # Would be nice to be able to do something after this but it 
 
 [keys.normal.space]
 o = ":sh tmux popup -d $(PWD)"
-f = ":sh tmux display-popup -E yazi $(PWD)"
+f = [
+  ':sh rm -f /tmp/unique-file',
+  ':insert-output yazi %{buffer_name} --chooser-file=/tmp/unique-file',
+  ':insert-output echo "\x1b[?1049h" > /dev/tty',
+  ':open %sh{cat /tmp/unique-file}',
+  ':redraw',
+]
 v = ["vsplit_new", "file_picker_in_current_directory"]
 h = ["hsplit_new", "file_picker_in_current_directory"]
 "space" = "file_picker_in_current_directory"
