@@ -33,6 +33,7 @@
   ri = rebase origin/main -i
   mlog = "!f() { git log --oneline $(git rev-parse --abbrev-ref origin/HEAD)..; }; f"
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  wt = worktree
 
 [filter "lfs"]
   clean = git-lfs clean -- %f
