@@ -1,5 +1,5 @@
-[language-server.lexical]
-command = "/Users/johantell/Projects/lexical/_build/dev/package/lexical/bin/start_lexical.sh"
+[language-server.expert]
+command = "/home/johantell/Code/expert_linux_amd64"
 
 [language-server.nextls]
 command = "nextls"
@@ -7,6 +7,9 @@ args = ["--stdio=true"]
 
 [language-server.ltex]
 command = "/opt/homebrew/opt/ltex-ls/bin/ltex-ls"
+
+[language-server.hx-lsp]
+command = "/home/johantell/.cargo/bin/hx-lsp"
 
 [[language]]
 name = "elixir"
@@ -18,11 +21,11 @@ auto-format = true
 diagnostic-severity = "hint"
 comment-token = "#"
 indent = {tab-width = 2, unit = " "}
-language-servers = ["lexical"]
+language-servers = ["expert", "hx-lsp"]
 
 [[language]]
 name = "heex"
-language-servers = ["lexical"]
+language-servers = ["expert"]
 
 [[language]]
 name = "markdown"

@@ -1,0 +1,14 @@
+{
+  "component": {
+    "prefix": "heexcomponent",
+    "body": [
+      "def $1(assigns) do",
+      "\t~H\"\"\"",
+      "\t\t$2",
+      "\t\"\"\"",
+      "end"
+    ],
+    "description": "A phoenix live view component function"
+  }
+}
+
