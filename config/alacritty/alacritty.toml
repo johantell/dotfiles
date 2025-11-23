@@ -13,6 +13,11 @@ action = "Paste"
 key = "Paste"
 
 [[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\n"
+
+[[keyboard.bindings]]
 action = "Copy"
 key = "Copy"
 
@@ -588,34 +593,6 @@ foreground = "0xB3B1AD"
 style = "Block"
 unfocused_hollow = true
 
-# [customtheme.bright]
-# black = "0x555555"
-# blue = "0x708284"
-# cyan = "0x819090"
-# green = "0x475b62"
-# magenta = "0x5956ba"
-# red = "0xbd3613"
-# white = "0xfcf4dc"
-# yellow = "0x536870"
-
-# [customtheme.cursor]
-# cursor = "0x808080"
-# text = "0xffffff"
-
-# [customtheme.normal]
-# black = "0x002831"
-# blue = "0x93a6b8"
-# cyan = "0x0fa896"
-# green = "0x738a05"
-# magenta = "0xc61c6f"
-# red = "0xd54e53"
-# white = "0xeae3cb"
-# yellow = "0xb68307"
-
-# [customtheme.primary]
-# background = "0xfcf4e4"
-# foreground = "0x666666"
-
 [debug]
 render_timer = false
 
@@ -656,34 +633,6 @@ semantic_escape_chars = ''',│`|:"' ()[]{}<>'''
 [terminal.shell]
 args = ["--login"]
 program = "/bin/zsh"
-
-# [solarizedlight.bright]
-# black = "0x666666"
-# blue = "0x708284"
-# cyan = "0x819090"
-# green = "0x475b62"
-# magenta = "0x5956ba"
-# red = "0xbd3613"
-# white = "0xfcf4dc"
-# yellow = "0x536870"
-
-# [solarizedlight.cursor]
-# cursor = "0x808080"
-# text = "0x304145"
-
-# [solarizedlight.normal]
-# black = "0x002831"
-# blue = "0x2176c7"
-# cyan = "0x259286"
-# green = "0x738a05"
-# magenta = "0xc61c6f"
-# red = "0xd54e53"
-# white = "0xeae3cb"
-# yellow = "0xb68307"
-
-# [solarizedlight.primary]
-# background = "0xfcf4e4"
-# foreground = "0x304145"
 
 [window]
 decorations = "full"
