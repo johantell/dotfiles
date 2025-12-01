@@ -8,6 +8,7 @@ completion-timeout = 50
 cursorline = true
 rulers = [120]
 popup-border = "all"
+clipboard-provider = "pasteboard"
 
 [editor.inline-diagnostics]
 cursor-line = "hint"
@@ -43,6 +44,7 @@ D = ["extend_to_line_end", "yank_main_selection_to_clipboard", "delete_selection
 S = "surround_add" # Would be nice to be able to do something after this but it isn't chainable
 
 [keys.normal.space]
+"1" = [":sh mix format %{buffer_name}", ":reload"]
 o = ":sh tmux popup -d $(PWD)"
 f = [
   ':sh rm -f /tmp/unique-file',
@@ -54,6 +56,7 @@ f = [
 v = ["vsplit_new", "file_picker_in_current_directory"]
 h = ["hsplit_new", "file_picker_in_current_directory"]
 "space" = "file_picker_in_current_directory"
+q = [':reload-all', ':echo reloaded']
 
 [keys.normal.space.t]
 # Open test file (test_file_lookup only works for elixir right now)
