@@ -35,6 +35,8 @@ auto-format = true
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
 scope = "text.markdown"
 roots = []
+soft-wrap = { enable = true, wrap-at-text-width = true }
+text-width = 80
 
 [[language]]
 name = "git-commit"
