@@ -31,7 +31,6 @@ tap "thoughtbot/formulae"
 brew "rcm"
 
 # Fonts
-tap "homebrew/cask-fonts"
 cask "font-fira-code"
 cask "font-symbols-only-nerd-font"
 
