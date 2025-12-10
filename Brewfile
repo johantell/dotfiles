@@ -22,7 +22,6 @@ brew "ripgrep"
 brew "zoxide"
 
 # Language servers
-brew "elixir-ls" # Elixir LSP
 brew "dprint" # Markdown formatter
 brew "marksman" # Markdown LSP
 
@@ -36,11 +35,10 @@ cask "font-symbols-only-nerd-font"
 
 # Applications
 cask "1password"
-cask "dash"
 cask "firefox"
-cask "rapidapi"
 cask "slack"
 cask "obsidian"
+cask "linear-linear"
 
 mas "Fantastical 2", id: 975937182
 mas "Things 3", id: 904280696
