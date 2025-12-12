@@ -1,15 +1,15 @@
 [language-server.expert]
-command = "/home/johantell/Code/expert_linux_amd64"
+command = "expert"
 
 [language-server.nextls]
 command = "nextls"
 args = ["--stdio=true"]
 
 [language-server.ltex]
-command = "/opt/homebrew/opt/ltex-ls/bin/ltex-ls"
+command = "ltex-ls"
 
 [language-server.hx-lsp]
-command = "/home/johantell/.cargo/bin/hx-lsp"
+command = "hx-lsp"
 
 [[language]]
 name = "elixir"
