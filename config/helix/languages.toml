@@ -1,9 +1,6 @@
 [language-server.expert]
 command = "expert"
-
-[language-server.nextls]
-command = "nextls"
-args = ["--stdio=true"]
+args = ["--stdio"]
 
 [language-server.ltex]
 command = "ltex-ls"
