@@ -45,5 +45,8 @@ bindkey "^P" up-line-or-search
 # Expose homebrew to shell
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Activate mise
+eval "$(mise activate zsh)"
+
 # Integrate FZF
 eval "$(fzf --zsh)"
