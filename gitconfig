@@ -60,4 +60,4 @@
   verbose = true
 
 [help]
-  autocorrect = prompt
+  autocorrect = false
