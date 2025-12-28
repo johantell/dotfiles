@@ -1,6 +1,6 @@
 [language-server.expert]
-command = "expert"
-args = ["--stdio"]
+command = "mise"
+args = ["exec", "--", "expert", "--stdio"]
 
 [language-server.ltex]
 command = "ltex-ls"
