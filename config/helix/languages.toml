@@ -2,6 +2,10 @@
 command = "mise"
 args = ["exec", "--", "expert", "--stdio"]
 
+[language-server.dexter]
+command = "dexter"
+args = ["lsp"]
+
 [language-server.ltex]
 command = "ltex-ls"
 
@@ -18,15 +22,15 @@ auto-format = true
 diagnostic-severity = "hint"
 comment-token = "#"
 indent = {tab-width = 2, unit = " "}
-language-servers = ["expert", "hx-lsp"]
+language-servers = ["dexter", "hx-lsp"]
 
 [[language]]
 name = "heex"
-language-servers = ["expert"]
+language-servers = ["dexter"]
 
 [[language]]
 name = "markdown"
-language-servers = ["ltex", "marksman"]
+language-servers = ["ltex", "markdown-oxide"]
 file-types = ["md", "txt"]
 auto-format = true
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
@@ -37,7 +41,7 @@ text-width = 80
 
 [[language]]
 name = "git-commit"
-language-servers = ["ltex", "marksman"]
+language-servers = ["ltex", "markdown-oxide"]
 scope = "text.markdown"
 soft-wrap = { enable = true, wrap-at-text-width = true }
 text-width = 80
@@ -45,7 +49,7 @@ text-width = 80
 [[language]]
 name = "git-pull-request"
 file-types = [{ glob = ".git/PULLREQ_EDITMSG" }]
-language-servers = ["ltex", "marksman"]
+language-servers = ["ltex", "markdown-oxide"]
 scope = "text.markdown"
 soft-wrap = { enable = true, wrap-at-text-width = true }
 text-width = 80

@@ -42,11 +42,11 @@ alias last_used_branches='git for-each-ref --sort="committerdate" --format="%(co
 bindkey "^N" down-line-or-search
 bindkey "^P" up-line-or-search
 
-# Expose homebrew to shell
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # Activate mise
 eval "$(mise activate zsh)"
+
+# Expose homebrew to shell
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Integrate FZF
 eval "$(fzf --zsh)"
