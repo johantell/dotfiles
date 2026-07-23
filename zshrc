@@ -1,5 +1,11 @@
 autoload -Uz compinit && compinit
 
+# History
+HISTFILE=~/.zsh_history
+HISTSIZE=50000
+SAVEHIST=50000
+setopt hist_ignore_all_dups hist_reduce_blanks share_history inc_append_history
+
 # Git prompt
 # source: https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 source ~/dotfiles/bin/.git-prompt.sh

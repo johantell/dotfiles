@@ -15,9 +15,6 @@ export EDITOR="hx"
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-# Ignore duplicates in terminal history
-export HISTCONTROL=ignoredups
-
 # Enable history in iex
 export ERL_AFLAGS="-kernel shell_history enabled"
 
