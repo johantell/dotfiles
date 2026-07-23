@@ -1,7 +1,6 @@
 brew "git"
 brew "gpg"
 brew "mas"
-brew "pick"
 brew "tmux"
 brew "tree"
 brew "helix"
@@ -21,7 +20,7 @@ brew "zoxide"
 
 # Language servers
 brew "dprint" # Markdown formatter
-brew "marksman" # Markdown LSP
+brew "markdown-oxide" # Markdown LSP
 
 # Dot file managemement
 tap "thoughtbot/formulae"
