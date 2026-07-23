@@ -10,9 +10,9 @@ setopt hist_ignore_all_dups hist_reduce_blanks share_history inc_append_history
 # source: https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 source ~/dotfiles/bin/.git-prompt.sh
 
-# Show a different color on master branch
+# Show a different color on the default branch
 function git_branch_color() {
-  [[ $1 == master ]] && echo "red" || echo "cyan";
+  [[ $1 == master || $1 == main ]] && echo "red" || echo "cyan";
 }
 
 # Set prompt to always be redrawn
