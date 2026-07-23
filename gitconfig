@@ -10,7 +10,7 @@
   rebase = true
 
 [merge]
-  conlictstyle = zdiff3
+  conflictstyle = zdiff3
 
 [branch]
   sort = -committerdate
