@@ -33,9 +33,6 @@ PROMPT=$(build_prompt);
 # Helper methods
 alias la="ls -lah"
 
-# Use hub as a wrapper for git
-alias git="hub"
-
 # Alias for what_the_color
 alias wtc="what_the_color"
 

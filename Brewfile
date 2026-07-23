@@ -1,6 +1,5 @@
 brew "git"
 brew "gpg"
-brew "hub"
 brew "mas"
 brew "pick"
 brew "reattach-to-user-namespace"
