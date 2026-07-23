@@ -1,4 +1,4 @@
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -C
 
 # History
 HISTFILE=~/.zsh_history
@@ -12,15 +12,17 @@ source ~/dotfiles/bin/.git-prompt.sh
 
 # Show a different color on master branch
 function git_branch_color() {
-  [[ $(__git_ps1 '%s') == master ]] && echo "red" || echo "cyan";
+  [[ $1 == master ]] && echo "red" || echo "cyan";
 }
 
 # Set prompt to always be redrawn
 function build_prompt() {
-  CURRENT_DIR="%F{yellow}%20<...<%~%<<%f";
-  GIT_BRANCH="%F{$(git_branch_color)}$(__git_ps1 "@%s")%f";
+  local branch=$(__git_ps1 '%s');
+  local current_dir="%F{yellow}%20<...<%~%<<%f";
+  local git_branch="";
+  [[ -n $branch ]] && git_branch="%F{$(git_branch_color "$branch")}@$branch%f";
 
-  echo "$CURRENT_DIR$GIT_BRANCH$ ";
+  echo "$current_dir$git_branch$ ";
 }
 
 function precmd {
