@@ -1,8 +1,5 @@
-# Export /usr/local/bin to path
-export PATH="/usr/local/bin:$PATH"
-
-# Export /usr/local/sbin to path
-export PATH="/usr/local/sbin:$PATH"
+# Expose Homebrew (Apple Silicon) to the shell; sets PATH, MANPATH and INFOPATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Export ~/.local/bin into path
 export PATH="$PATH:$HOME/.local/bin"
